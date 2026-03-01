@@ -59,7 +59,7 @@ export default function LoginCard() {
         data = JSON.parse(responseText);
       } catch (e) {
         console.error("JSON parse error:", e);
-        setError("Serverdan noto'g'ri formatda javob keldi");
+        setError("Login yoki parol xato ");
         // setDebugInfo(
         //   `Status: ${res.status}, Response: ${responseText.substring(0, 100)}`,
         // );
