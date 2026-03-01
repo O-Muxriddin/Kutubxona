@@ -60,9 +60,9 @@ export default function LoginCard() {
       } catch (e) {
         console.error("JSON parse error:", e);
         setError("Serverdan noto'g'ri formatda javob keldi");
-        setDebugInfo(
-          `Status: ${res.status}, Response: ${responseText.substring(0, 100)}`,
-        );
+        // setDebugInfo(
+        //   `Status: ${res.status}, Response: ${responseText.substring(0, 100)}`,
+        // );
         setLoading(false);
         return;
       }
