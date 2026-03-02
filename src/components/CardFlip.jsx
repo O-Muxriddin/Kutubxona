@@ -61,7 +61,7 @@ export default function CardFlip() {
                 {item.cover ? (
                   <img
                     src={item.cover}
-                    alt={item.title}
+                    alt="Rasm yuklanmagan "
                     className="absolute inset-0 h-full w-full object-cover"
                   />
                 ) : (
@@ -121,7 +121,7 @@ export default function CardFlip() {
 
                 <div className="mt-4">
                   <DialogNestedDemo
-                    data={item} 
+                    data={item}
                     onUpdate={(updatedItem) => {
                       setItems((prev) =>
                         prev.map((el) =>
